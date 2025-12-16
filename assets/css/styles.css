@@ -1,4 +1,5 @@
 body {
+    font-family: "Raleway", sans-serif;
     height: 2491px;
     background: #000000;
     color: #FFFFFF;
@@ -24,12 +25,12 @@ body {
 
 .banner-content .logo {
     width: 268px;
-    height: 240px;
-    margin: auto;
+    height: 268px;
+    margin-bottom: 20px;
 }
 
 .banner-content h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     max-width: 434px;
     height: 47px;
     line-height: 1.2;
@@ -43,14 +44,13 @@ body {
 }
 
 .banner-content p {
-    font-size: 1.25rem;
+    font-size: 1.24rem;
     max-width: 510px;
     height: 46px;
     font-weight: 400;
     margin-bottom: 40px;
-    text-align: center;
+    text-align: justify;
     line-height: 1.4;
-    letter-spacing: 0;
 }
 
 .banner-content button {
