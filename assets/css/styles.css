@@ -1,17 +1,30 @@
+@import './variables.css';
+@import './main.css';
+@import './footer.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: "Raleway", sans-serif;
-    height: 2491px;
-    background: #000000;
-    color: #FFFFFF;
+    font-family: var(--font-family-main);
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .banner {
-    height: 605px;
-    background: url('../images/banner.png') no-repeat center;
-    border: 1px solid #33A8DB;
+    padding: 60px 0;
+    background: url('../images/banner.png') no-repeat center/cover;
+    border-bottom: 1px solid var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .banner-content {
@@ -19,38 +32,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 510px;
-    height: 393px;
+    gap: 20px;
+    max-width: 90%;
 }
 
 .banner-content .logo {
-    width: 268px;
-    height: 268px;
-    margin-bottom: 20px;
+    width: 200px;
+    height: auto;
 }
 
 .banner-content h1 {
-    font-size: 2.5rem;
-    max-width: 434px;
-    height: 47px;
-    line-height: 1.2;
-    letter-spacing: 0;
-    margin-bottom: 10px;
+    font-size: var(--font-size-large);
     font-weight: 900;
     text-transform: uppercase;
-    background: linear-gradient(to bottom, #33A8DB 0%, #1472B7 100%);
+    line-height: 1.2;
+    background: linear-gradient(to bottom, var(--gradient-start) 0%, var(--gradient-end) 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 .banner-content p {
-    font-size: 1.24rem;
+    font-size: var(--font-size-medium);
     max-width: 510px;
-    height: 46px;
-    font-weight: 400;
-    margin-bottom: 40px;
-    text-align: justify;
-    line-height: 1.4;
 }
 
 .banner-content button {
@@ -59,19 +62,14 @@ body {
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
-
-    color: #3BA1CD;
+    color: var(--primary-color-light);
     background:
         linear-gradient(#050b10, #050b10) padding-box,
-        linear-gradient(90deg, #3BA1CD, #1572B7) border-box;
-
+        linear-gradient(90deg, var(--primary-color-light), var(--primary-color-dark)) border-box;
     border: 1.5px solid transparent;
     border-radius: 2px;
-
     cursor: pointer;
-    box-shadow:
-        0 0 12px rgba(0, 200, 255, 0.25);
-
+    box-shadow: 0 0 12px rgba(0, 200, 255, 0.25);
     transition:
         box-shadow 0.3s ease,
         transform 0.2s ease,
@@ -79,8 +77,25 @@ body {
 }
 
 .banner-content button:hover {
-    color: #ffffff;
-    box-shadow:
-        0 0 20px rgba(0, 200, 255, 0.6);
+    color: var(--text-color);
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
     transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 40px 0;
+    }
+
+    .banner-content .logo {
+        width: 150px;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
 }

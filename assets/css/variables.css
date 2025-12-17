@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #33A8DB;
+    --primary-color-dark: #1472B7;
+    --primary-color-light: #3BA1CD;
+  
+    --bg-color: #000000;
+    --surface-color: #252525;
+    --text-color: #FFFFFF;
+    
+    --gradient-start: #33A8DB;
+    --gradient-end: #1472B7;
+    
+    --font-family-main: "Raleway", sans-serif;
+    --font-size-large: 2.5rem;
+    --font-size-medium: 1.25rem;
+    --font-size-small: 1rem;
+  }
+  

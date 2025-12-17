@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-10deg,
+            #020a0f 0%,
+            #071821 35%,
+            #0a2733 60%,
+            #071821 85%,
+            #020a0f 100%), linear-gradient(10deg,
+            #020a0f 0%,
+            #071821 35%,
+            #0a2733 60%,
+            #071821 85%,
+            #020a0f 100%);
+    padding: 32px 0 16px;
+    border-top: 1px solid var(--primary-color);
+    margin-top: auto;
+}
+
+.footer .dio-logo {
+    margin-bottom: 8px;
+    max-width: 260px;
+    height: auto;
+}
+
+.footer p {
+    color: var(--text-color);
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--primary-color-light);
+    text-decoration: none;
+    font-weight: bold;
+}
